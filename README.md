@@ -1,4 +1,37 @@
-# Fork mode
+
+# Pm2 Node Manager / Cluster
+
+## Discription
+
+---
+
+This module is developed to extend our base server. It can be easily installed with the Plugin script from the base module. For detailed Information please see [@base-server](https://github.com/dominikhaid/node-base-server.git)
+
+### Module Features
+
+- Add Pm2 to base package
+- Example configuration
+
+
+### Setup
+
+---
+
+> git clone https://github.com/dominikhaid/node-base-server.git my-app
+> 
+> cd my-app
+> 
+> npm run plguin p=https://github.com/dominikhaid/node-module-pm2.git
+> 
+> edit the ecosystem.config.js
+> 
+> pm2 start
+
+<br/><br/>
+
+## PM2 Commands
+
+### Fork mode
 
 ---
 
@@ -6,7 +39,7 @@
 pm2 start app.js --name my-api # Name process
 ```
 
-# Cluster mode
+### Cluster mode
 
 ---
 
@@ -17,7 +50,7 @@ pm2 scale app +3             # Scales `app` up by 3 workers
 pm2 scale app 2              # Scales `app` up or down to 2 workers total
 ```
 
-# Listing
+### Listing
 
 ---
 
@@ -31,7 +64,7 @@ pm2 describe 0         # Display all informations about a specific process
 pm2 monit              # Monitor all processes
 ```
 
-# Logs
+### Logs
 
 ---
 
@@ -41,7 +74,7 @@ pm2 flush              # Empty all log files
 pm2 reloadLogs         # Reload all logs
 ```
 
-# Actions
+### Actions
 
 ---
 
@@ -58,7 +91,7 @@ pm2 delete 0           # Will remove process from pm2 list
 pm2 delete all         # Will remove all processes from pm2 list
 ```
 
-# Misc
+### Misc
 
 ---
 
